@@ -102,7 +102,7 @@ public class ShineView extends View {
         mLightPaint.setStyle(Paint.Style.FILL);
         mLightPaint.setColor(Color.WHITE);
 
-        xfermode = new PorterDuffXfermode(PorterDuff.Mode.DST_IN);
+        xfermode = new PorterDuffXfermode(PorterDuff.Mode.DST_OUT);
         blurMaskFilter = new BlurMaskFilter(10, BlurMaskFilter.Blur.NORMAL);
     }
 
